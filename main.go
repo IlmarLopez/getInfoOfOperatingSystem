@@ -15,15 +15,15 @@ type OperatingSystem struct {
 }
 
 func main() {
-	serialNumberDiskdrive := GetSerialNumberDiskdrive()
+	serialNumberDiskdrive := GetInfoOperatingSystem()
 
 	// Print in console
 	fmt.Println("Disckdrive ", serialNumberDiskdrive.SerialNoDiskdrive)
 	fmt.Println("Baseboard ", serialNumberDiskdrive.SerialNoBaseboard)
 }
 
-// GetSerialNumberDiskdrive obtiene del sistema el serial number del disco duro
-func GetSerialNumberDiskdrive() OperatingSystem {
+// GetInfoOperatingSystem obtiene del sistema el serial number del disco duro
+func GetInfoOperatingSystem() OperatingSystem {
 	var operatingSystem OperatingSystem
 
 	/* === LINUX === */
